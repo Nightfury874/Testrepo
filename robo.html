@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERBOT 4.0</title>
+</head>
+<style>
+    /* .body{ */
+        /* background-color: lightblue; */
+        /* margin: 2px; */
+        /* padding: 2px; */
+    /* } */
+    .container{
+        background-color: lightcoral;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .semicircle{
+        height: 100px;
+        background-color: yellow;
+        width: 200px;
+        border-radius: 100px 100px 10px 10px;
+        transform: rotate(270deg);
+        display: block;
+        transition: transform is linear;
+    }
+    .rectanglebody{
+        width: 250px;
+        height: 125px;
+        background-color: green;
+        border-radius: 10px;
+        display: block;
+        transition: 1s;
+       
+    }
+   .container:hover .semicircle {
+        transform: translatex(100%);
+        background-color: blueviolet;
+        animation: left-to-right 1s ease-in forwards;
+   }
+   container:hover .triangle{
+        transform: translatex(100%);
+        background-color: blueviolet;
+        animation: left-to-right 1s ease-in forwards;
+   @keyframes left-left-to-right{
+       100%{
+           transform: translateX(100%);
+       }
+       0%{
+           transform:translateX(0);
+       }
+       33%{
+           transform:translateY(100%)
+       }
+       66%{
+           transform: translateX(100%) translateY(100%);
+          }
+       }
+     
+   }  
+   .triangle{
+       width: 0px;
+       height: 0px;
+       border-right: 60px solid red;
+       border-top: 60px solid transparent;
+       border-bottom: 60px solid transparent;
+   }
+</style>
+<body>
+    <!-- <img src="img/bg.jpg" alt="" class="bg-img"> -->
+    <div class="container " >
+    <div class="semicircle"></div>
+    <div  class="rectanglebody"></div>
+    <div class="triangle"></div>
+    
+    
+</div>   
+</body>
+
+</html>
