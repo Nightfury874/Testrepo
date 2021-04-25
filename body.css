@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*background*/
+.water1 {
+    height: 100vh;
+    background-image: url(water.jpg);
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  /*end background*/
+
+ 
+ 
+  #background-wrap{
+      bottom: 0;
+      left:0;
+      position:fixed;
+      right:0;
+      top:0;
+      z-index: -1;
+  }
+
+
+  /*bubble animation*/
+
+  .x1{
+      -webkit-animation:animatebubble 25s linear infinite, sideways 2s ease-in-out infinite alternate;
+      -moz-animation : animatebubble 25s linear infinite, sideways 2s ease-in-out infinite alternate;
+      animation : animatebubble 25s linear infinite ,sideways 2s ease-in-out infinite alternate;
+
+      left :-5%;
+      top : 5%;
+
+      -webkit-transform :scale(0.6);
+      -moz-transform: scale(0.6);
+      transform:scale(0.6);
+
+  }
+
+/*object*/
+.bubble{
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+
+    -webkit-box-shadow: 0 20px 30px rgba(0,0,0,0.2), inset 0px 10px 30px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0 20px 30px rgba(0,0,0,0.2) inset 0px 10px 30px 5px rgba(255,255,255,)
+
+
+}
+
+
+
+
+ /* fish*/
+
+ body {
+    background: #fefFFf;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .box {
+    position: relative;
+    margin: auto;
+    display: block;
+    /*optional background or border*/
+    margin-top: 2%;
+    width: 600px;
+    height: 420px;
+    background: none;
+  }
+  
+  .body {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 48%;
+    height: 56%;
+    background: #19064e;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .body-copy {
+    position: absolute;
+    top: 22%;
+    left: -9%;
+    width: 57%;
+    height: 60%;
+    background: #19064e;
+    border-radius: 10%;
+    z-index: 0;
+    transform: rotate(45deg);
+  }
+  
+  .eye {
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    width: 3%;
+    height: 6%;
+    background: white;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(35deg);
+  }
+  
+  .part-1 {
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    width: 33%;
+    height: 36%;
+    background: linear-gradient(270deg, rgba(42, 245, 152, 0.5) 0%, rgba(18, 13, 94, 0.5) 100%);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .part-2 {
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    width: 43%;
+    height: 36%;
+    background: linear-gradient(270deg, rgba(42, 245, 152, 0.5) 0%, rgba(18, 13, 94, 0.5) 100%);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  .part-3 {
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    width: 43%;
+    height: 26%;
+    background: linear-gradient(270deg, rgba(42, 245, 152, 0.5) 0%, rgba(18, 13, 94, 0.5) 100%);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
